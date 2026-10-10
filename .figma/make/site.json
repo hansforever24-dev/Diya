@@ -1,0 +1,10 @@
+{
+  "description": "An elegant, private birthday website celebrating Diya with personalized portraits, heartfelt messages, and a soothing music player for family sharing.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
