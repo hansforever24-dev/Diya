@@ -3,19 +3,19 @@ import { FormEvent, ReactNode, useEffect, useRef, useState } from "react";
 
 const photos = [
   {
-    src: "public/photos/1.jpeg",
+    src: "/photos/1.jpeg",
     alt: "Temporary portrait placeholder — replace with Diya's photo",
     title: "Her beautiful smile",
     note: "A moment to remember",
   },
   {
-    src: "public/photos/2.jpeg",
+    src: "/photos/2.jpeg",
     alt: "Temporary portrait placeholder — replace with Diya's photo",
     title: "Her own little world",
     note: "Simply being herself",
   },
   {
-    src: "public/photos/3.jpeg",
+    src: "/photos/3.jpeg",
     alt: "Temporary portrait placeholder — replace with Diya's photo",
     title: "A memory to keep",
     note: "One for the album",
@@ -152,7 +152,7 @@ function PasswordGate({
     event.preventDefault();
     setState("loading");
     // Set VITE_AUTH_ENDPOINT to a server endpoint in production. The preview fallback
-    // is intentionally isolated here and must be replaced before public deployment.
+    // is intentionally isolated here and must be replaced before  deployment.
     const endpoint = import.meta.env.VITE_AUTH_ENDPOINT;
     if (endpoint) {
       try {
@@ -243,9 +243,9 @@ function Qualities({ next, back }: { next: () => void; back: () => void }) {
 }
 
 const familyVideos = [
-  { name: "Father", label: "With Papa", src: "public/videos/father.mov" },
-  { name: "Mother", label: "With Mumma", src: "public/videos/mother.mp4" },
-  { name: "Sister", label: "With Haya", src: "public/videos/sister.mp4" },
+  { name: "Father", label: "With Papa", src: "/videos/father.mov" },
+  { name: "Mother", label: "With Mumma", src: "/videos/mother.mp4" },
+  { name: "Sister", label: "With Haya", src: "/videos/sister.mp4" },
 ];
 
 function FamilyVideos({ next, back }: { next: () => void; back: () => void }) {
